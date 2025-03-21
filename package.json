@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:biome": "biome check .",
+    "format": "biome format --write .",
+    "check": "biome check --apply .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -14,11 +18,20 @@
     "next": "15.2.3"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@biomejs/biome": "1.9.4",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "husky": "^8.0.3",
+       "lint-staged": "^15.2.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "biome format --write",
+      "biome check --apply"
+    ]
   }
 }

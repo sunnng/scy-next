@@ -1,0 +1,62 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"ignoreUnknown": true,
+		"ignore": ["node_modules", ".next", "build", "dist", "public", ".vercel", "coverage"]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"lineWidth": 100
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"correctness": {
+				"useExhaustiveDependencies": "error",
+				"noUnusedVariables": "error",
+				"noUndeclaredVariables": "error"
+			},
+			"a11y": {
+				"recommended": true,
+				"useKeyWithClickEvents": "error",
+				"useValidAnchor": "error"
+			},
+			"suspicious": {
+				"noExplicitAny": "warn",
+				"noConsoleLog": "warn",
+				"noArrayIndexKey": "warn"
+			},
+			"performance": {
+				"recommended": true
+			},
+			"style": {
+				"recommended": true,
+				"useConst": "error",
+				"noVar": "error",
+				"useTemplate": "error"
+			},
+			"complexity": {
+				"noBannedTypes": "error"
+			},
+			"nursery": {
+				"recommended": true
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double",
+			"semicolons": "always"
+		}
+	}
+}
