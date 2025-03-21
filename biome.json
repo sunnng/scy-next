@@ -23,8 +23,7 @@
 			"recommended": true,
 			"correctness": {
 				"useExhaustiveDependencies": "error",
-				"noUnusedVariables": "error",
-				"noUndeclaredVariables": "error"
+				"noUnusedVariables": "warn"
 			},
 			"a11y": {
 				"recommended": true,
@@ -49,7 +48,14 @@
 				"noBannedTypes": "error"
 			},
 			"nursery": {
-				"recommended": true
+				"recommended": true,
+				"useSortedClasses": {
+					"level": "warn",
+					"options": {
+						"attributes": ["classList"],
+						"functions": ["clsx", "cva", "tw"]
+					}
+				}
 			}
 		}
 	},

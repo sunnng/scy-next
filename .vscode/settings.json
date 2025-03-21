@@ -17,5 +17,13 @@
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
-	"biome.lsp.bin": "node_modules/@biomejs/biome/bin/biome"
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"biome.lspBin": "node_modules/@biomejs/biome/bin/biome",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"workbench.editor.customLabels.patterns": {
+		"**/app/**/page.tsx": "${dirname} - Page",
+		"**/app/**/layout.tsx": "${dirname} - Layout"
+	}
 }

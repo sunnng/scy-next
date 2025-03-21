@@ -1,4 +1,3 @@
 export default function Home() {
-	return <div>
-		scy</div>;
+	return <div>scy</div>;
 }
