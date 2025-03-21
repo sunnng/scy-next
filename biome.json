@@ -7,7 +7,16 @@
 	},
 	"files": {
 		"ignoreUnknown": true,
-		"ignore": ["node_modules", ".next", "build", "dist", "public", ".vercel", "coverage"]
+		"ignore": [
+			"**/node_modules",
+			"**/dist",
+			"**/build",
+			"**/public",
+			"**/.turbo",
+			"**/.next",
+			".vercel",
+			"coverage"
+		]
 	},
 	"formatter": {
 		"enabled": true,
@@ -57,12 +66,6 @@
 					}
 				}
 			}
-		}
-	},
-	"javascript": {
-		"formatter": {
-			"quoteStyle": "double",
-			"semicolons": "always"
 		}
 	}
 }

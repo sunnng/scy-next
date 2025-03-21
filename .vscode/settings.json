@@ -20,7 +20,9 @@
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
-	"biome.lspBin": "node_modules/@biomejs/biome/bin/biome",
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"workbench.editor.customLabels.patterns": {
 		"**/app/**/page.tsx": "${dirname} - Page",
