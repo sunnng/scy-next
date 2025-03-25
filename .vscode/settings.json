@@ -2,7 +2,8 @@
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports.biome": "explicit",
-		"source.fixAll.biome": "explicit"
+		"source.fixAll.biome": "explicit",
+		"quickfix.biome": "explicit"
 	},
 	"editor.defaultFormatter": "biomejs.biome",
 	"files.associations": {
@@ -20,5 +21,8 @@
 	"workbench.editor.customLabels.patterns": {
 		"**/app/**/page.tsx": "${dirname} - Page",
 		"**/app/**/layout.tsx": "${dirname} - Layout"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
 	}
 }
