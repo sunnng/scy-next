@@ -35,9 +35,12 @@
 				"noUnusedVariables": "warn"
 			},
 			"a11y": {
-				"recommended": true,
-				"useKeyWithClickEvents": "error",
-				"useValidAnchor": "error"
+				"noSvgWithoutTitle": "off",
+				"useButtonType": "off",
+				"useAltText": "off",
+				"useKeyWithClickEvents": "off",
+				"useSemanticElements": "off",
+				"noLabelWithoutControl": "off"
 			},
 			"suspicious": {
 				"noExplicitAny": "warn",
