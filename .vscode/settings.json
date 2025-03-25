@@ -5,24 +5,17 @@
 		"source.fixAll.biome": "explicit"
 	},
 	"editor.defaultFormatter": "biomejs.biome",
-	"[javascript]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
 	"editor.quickSuggestions": {
 		"strings": "on"
 	},
+	"tailwindCSS.experimental.classRegex": [
+		["clsx\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+		["cva\\(((?:[^()]|\\([^()]*\\))*)\\)", "[\"'`]?([^\"'`]+)[\"'`]?"],
+		["cn\\(((?:[^()]|\\([^()]*\\))*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+	],
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"workbench.editor.customLabels.patterns": {
 		"**/app/**/page.tsx": "${dirname} - Page",
