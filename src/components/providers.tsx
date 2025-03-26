@@ -1,6 +1,7 @@
 "use client";
 
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { TRPCProvider } from "@/trpc/client";
 
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
@@ -14,7 +15,9 @@ export function ThemeProvider({
 	return (
 		<NextThemesProvider {...props}>
 			<TooltipProvider>
-				<NuqsAdapter>{children}</NuqsAdapter>
+				<NuqsAdapter>
+					<TRPCProvider>{children}</TRPCProvider>
+				</NuqsAdapter>
 			</TooltipProvider>
 		</NextThemesProvider>
 	);
