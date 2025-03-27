@@ -3,7 +3,7 @@ import { z } from "zod";
 
 export const env = createEnv({
 	server: {
-		NODE_ENV: z.enum(["development", "production", "test"]),
+		DATABASE_URL: z.string().url(),
 	},
 	emptyStringAsUndefined: true,
 	// For Next.js >= 13.4.4, you only need to destructure client variables:
